@@ -10,17 +10,23 @@ class HomePage extends StatelessWidget {
             'Maury Show',
             style: TextStyle(
               color: Colors.red,
+              fontSize: 30,
             ),
           ),
           actions: [
             Center(
-              child: Text('XXXXXXXX'),
+              child: Text('XXXXX'),
             ),
             Center(
-              child: Text('YYYYYYYYY'),
+              child: Text('YYYYYY'),
             )
           ]),
       drawer: Drawer(),
+      whidth: 200,
+      height: 200,
+      color: Colors.green,
+      child: Text('Teste'),
+      body: Container(child: Text('Teste')),
     );
   }
 }
