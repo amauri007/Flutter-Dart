@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Home2Page extends StatefulWidget {
-  const Home2Page({Key? key}) : super(key: key);
-
   @override
-  State<Home2Page> createState() => _Home2PageState();
+  _Home2PageState createState() => _Home2PageState();
 }
 
 class _Home2PageState extends State<Home2Page> {
@@ -14,7 +12,7 @@ class _Home2PageState extends State<Home2Page> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('nome'),
+        title: Text(nome),
       ),
       body: Column(
         children: [
@@ -22,7 +20,7 @@ class _Home2PageState extends State<Home2Page> {
           FlatButton(
             onPressed: () {
               setState(() {
-                nome = 'Alterado para Amauri Pereira com statefull';
+                nome = 'Amauri Pereira 2 com statefull';
               });
             },
             child: Text('Alterando Nome'),
